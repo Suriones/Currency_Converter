@@ -8,7 +8,17 @@ module.exports = {
     module: {
         rules: [
             { test: /\.(css|scss|sass)$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
-            { test: /\.(js|jsx)$/, use: 'babel-loader' }
+            { test: /\.(js|jsx)$/, use: 'babel-loader' },
+            {
+                test: /\.(png|svg|jpg|gif)$/, use: [{
+                    loader: 'file-loader', options: {
+                        name: f => {
+                            let dirNameInsideAssets = path.relative(path.join(__dirname, "public"), path.dirname(f));
+                            return `${dirNameInsideAssets}/[name].[ext]`;
+                        }
+                    }
+                }]
+            }
         ]
     },
     output: {

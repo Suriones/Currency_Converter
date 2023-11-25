@@ -1,0 +1,111 @@
+.conversion {
+    width: 500px;
+    height: 150px;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+        -23px 0 20px -23px rgba(0, 0, 0, .6),
+        23px 0 20px -23px rgba(0, 0, 0, .6),
+        inset 0 0 40px rgba(0, 0, 0, .1);
+
+    .first {
+        width: 220px;
+        height: 100px;
+        display: inline-block;
+        margin: 50px 0 0 5px;
+    }
+
+    .second {
+        width: 220px;
+        height: 100px;
+        float: right;
+        margin: 50px 5px 0 0;
+        text-align: right;
+    }
+
+    .message {
+        text-align: center;
+        margin-top: 20px;
+        font-family: system-ui;
+        font-size: 18px;
+    }
+
+    input {
+        margin: 5px;
+        width: 90px;
+        font-size: 16px;
+        padding: 6px 0 4px 10px;
+        border: 1px solid #cecece;
+        border-radius: 3px;
+    }
+
+    img {
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+    }
+
+    .direction {
+        animation: spin 0.6s linear infinite;
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(390deg);
+            }
+        }
+    }
+
+    select {
+        border-radius: 5px;
+        border: 1px solid #cecece;
+        text-decoration: none;
+        width: 80px;
+        padding: 5px 10px 5px 10px;
+        background-position: 290px -145px;
+        white-space: nowrap;
+    }
+
+    select::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    select::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+    }
+
+    select::-webkit-scrollbar-thumb {
+        background-color: gray;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .second {
+        float: left !important;
+    }
+
+    .conversion {
+        width: 370px;
+
+        img {
+            display: none;
+        }
+
+        input {
+            width: 70px;
+        }
+
+        .first {
+            width: 180px;
+        }
+
+        .second {
+            width: 180px;
+        }
+    }
+}

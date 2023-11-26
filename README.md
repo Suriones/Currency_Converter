@@ -12,7 +12,7 @@
 </ul>
 
 <h1>How to open?</h1>
-<p>Use this link --> https://suriones.github.io/Currency-Converter/</p>
+<p>Use this link --> https://suriones.github.io/Currency_Converter/</p>
 
 <p><img src="https://github.com/Suriones/Currency-Converter/assets/111291999/ace22a92-ed0e-40c7-bb0f-559939af7ca5"></p>
 

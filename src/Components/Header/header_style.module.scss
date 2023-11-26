@@ -57,9 +57,13 @@ header {
 
         .header_right {
             float: left !important;
-            margin-left: 7px;
-            white-space: nowrap;
-            width: 300px;
+            width: 100%;
+            flex-direction: column;
+            display: flex;
+
+            a {
+                width: 140px;
+            }
         }
     }
 
